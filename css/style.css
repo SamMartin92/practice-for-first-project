@@ -1,13 +1,13 @@
-/*header*/
+body{
+    color: #c45508
+}
 
 #nav-bar {
     list-style-type: none;
     float: right;
     display: flex;
-    padding: 20px 10px 10px 20px;;
-    margin: 10px auto;
-    
-    
+    padding: 20px 10px 0px 20px;;
+    margin: 10px auto;  
 }
 
 li a {
@@ -15,7 +15,15 @@ li a {
     margin: 5px;
     padding:10px;
     font-size: 30px;
+    font-family: 'Varela Round', sans-serif;
+    color: #c45508;
+    
 }
+
+li a:hover{
+    font-size:40px;
+    text-decoration: underline;
+    }
 
 #home-image{
     height:100px;
@@ -28,7 +36,35 @@ li a {
 
     /* photo section on home page */
 
-    h2 {
-        font-family: 'Licorice', cursive;
+    #mid-section{
+        background: url('../assets/images/background-image-2.jpg') no-repeat center center;
+        opacity: 0.9;
+      height:1000px;
+      width: 100%;
+    } 
+
+    #mid-section  h2 {
+        font-family: 'Licorice', Oswald, sans-serif;
         letter-spacing: 3px;
+        text-align: center;
+        font-size: 100px;
+        font-weight: 1500;
+        margin:0;
+    }
+    #mid-section p{
+        margin: 0 auto;
+        font-family: 'Licorice', Oswald, sans-serif;
+        font-size:50px;
+        font-weight: 1500px;
+        text-align: center;
+    }
+
+    #heading-block {
+        background-color: whitesmoke;
+        opacity: 0.65;        
+        width:900px;
+        margin: 0;
+        position:relative;
+        top:100px;
+        left:20px;
     }
