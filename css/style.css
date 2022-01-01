@@ -2,6 +2,8 @@ body{
     color: #c45508
 }
 
+/*index.html*/
+
 #nav-bar {
     list-style-type: none;
     float: right;
@@ -68,3 +70,9 @@ li a:hover{
         top:100px;
         left:20px;
     }
+
+/*about.html*/
+
+#facebook-vid{
+    margin: 100px 33% 0;
+}
