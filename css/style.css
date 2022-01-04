@@ -1,4 +1,4 @@
-body{
+body {
     color: #c45508
 }
 
@@ -8,73 +8,122 @@ body{
     list-style-type: none;
     float: right;
     display: flex;
-    padding: 20px 10px 0px 20px;;
-    margin: 10px auto;  
+    padding: 20px 10px 0px 20px;
+    ;
+    margin: 10px auto;
 }
 
 li a {
     text-decoration: none;
     margin: 5px;
-    padding:10px;
+    padding: 10px;
     font-size: 30px;
     font-family: 'Varela Round', sans-serif;
     color: #c45508;
-    
+
 }
 
-li a:hover{
-    font-size:40px;
+li a:hover {
+    font-size: 40px;
     text-decoration: underline;
-    }
+}
 
-#home-image{
+#home-image {
     height: 80px;
-    width:80px;
+    width: 80px;
     overflow: hidden;
     border-radius: 10px;
     border: none;
     margin: 0 100px;
     }
 
-    /* photo section on home page */
+/* photo section on home page */
 
-    #mid-section{
-        background: url('../assets/images/background-image-2.jpg') no-repeat center center;
-        opacity: 0.9;
-      height:1000px;
-      width: 100%;
-    } 
+#mid-section {
+    background: url('../assets/images/background-image-2.jpg') no-repeat center center;
+    opacity: 1;
+    height: 1000px;
+    width: 100%;
+    animation-name: pic-appear;
+    animation-duration: 2s;
+    margin-bottom: 50px;
+}
 
-    #mid-section  h2 {
-        font-family: 'Licorice', Oswald, sans-serif;
-        letter-spacing: 3px;
-        text-align: center;
-        font-size: 100px;
-        font-weight: 1500;
-        margin:0;
-    }
-    #mid-section p{
-        margin: 0 auto;
-        font-family: 'Licorice', Oswald, sans-serif;
-        font-size:50px;
-        font-weight: 1500px;
-        text-align: center;
+@keyframes pic-appear {
+    from {
+        opacity: 0;
     }
 
-    #heading-block {
-        background-color: whitesmoke;
-        opacity: 0.65;        
-        width:900px;
-        margin: 0;
-        position:relative;
-        top:100px;
-        left:20px;
+    to {
+        opacity: 1;
     }
-
-/*about.html*/
-
-#facebook-vid{
-    margin: 100px 33% 0;
 }
 
 
+#mid-section h2 {
+    font-family: 'Licorice', Oswald, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 1500;
+    margin: 0;
+}
+
+#mid-section p {
+    margin: 0 auto;
+    font-family: 'Licorice', Oswald, sans-serif;
+    font-size: 50px;
+    font-weight: 1500px;
+    text-align: center;
+}
+
+#heading-block {
+    background-color: whitesmoke;
+    opacity: 0.65;
+    width: 900px;
+    margin: 0;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    animation-name: text-appear;
+    animation-duration: 5s;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.65;
+    }
+}
+
+/*home gallery*/
+
+
+
+.home-gallery-one, .home-gallery-two{
+    display: inline-block;
+     
+}
+
+.home-images{
+    display:block;
+    height: 300px;
+    width: 33%;
+    position: relative;
+    padding: 50px;
+}
+
+#gallery-heading{
+    text-align: center;
+    font-family: 'Licorice', Oswald, sans-serif;
+}
+
+
+/*about.html*/
+
+#facebook-vid {
+    margin: 100px 33% 0;
+}
