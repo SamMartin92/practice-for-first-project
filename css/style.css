@@ -28,7 +28,7 @@ li a:hover{
     }
 
 #home-image{
-    height: 80px;px;
+    height: 80px;
     width:80px;
     overflow: hidden;
     border-radius: 10px;
@@ -76,3 +76,5 @@ li a:hover{
 #facebook-vid{
     margin: 100px 33% 0;
 }
+
+
